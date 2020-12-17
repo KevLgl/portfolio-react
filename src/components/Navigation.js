@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaHome, FaBookReader, FaRocketchat, FaConnectdevelop } from "react-icons/fa";
+import { FaHome, FaBookReader, FaRocketchat, FaConnectdevelop, FaFacebookF, FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Navigation = () => {
     return (
@@ -8,7 +8,10 @@ const Navigation = () => {
 
             <div className="id">   
                 <div className="idContent">
-                    <img src="./media/billGates.jpg" alt="profil-picture"/>
+                    <div className="imgcontainer">
+                        <img src="./media/billGates.jpg" alt="profil-picture"/>
+                    </div>
+                       
                     <h3>Kevin Laguel</h3>
                 </div>
             </div>
@@ -41,6 +44,28 @@ const Navigation = () => {
                     </li>
                 </ul>
             </div>
+
+            <div className="socialNetwork">
+                <ul>
+                    <li>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaFacebookF /></i></i></a>
+                    </li>
+                    <li>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaGithub /></i></i></a>
+                    </li>
+                    <li>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaTwitter /></i></i></a>
+                    </li>
+                    <li>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaLinkedinIn /></i></i></a>
+                    </li>
+                </ul>
+                <div className="signature">
+                    <p>fromScratch - Kevin Laguel - 2020</p>
+                </div>
+            </div>
+
+
 
         </div>
     );
