@@ -9,7 +9,7 @@ const Navigation = () => {
             <div className="id">   
                 <div className="idContent">
                     <div className="imgcontainer">
-                        <img src="./media/billGates.jpg" alt="profil-picture"/>
+                        <img src="./media/kevin.jpg" alt="profil-picture"/>
                     </div>
                        
                     <h3>Kevin Laguel</h3>
