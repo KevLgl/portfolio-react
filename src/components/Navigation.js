@@ -1,74 +1,78 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaHome, FaBookReader, FaRocketchat, FaConnectdevelop, FaFacebookF, FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-
 const Navigation = () => {
     return (
-        <div className="sidebar">
-
-            <div className="id">   
-                <div className="idContent">
-                    <div className="imgcontainer">
-                        <img src="./media/kevin.jpg" alt="profil-picture"/>
+<div>
+    <nav class="bg-white dark:bg-gray-800  shadow ">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="w-full justify-between flex items-center">
+                    <a class="flex-shrink-0" href="/">
+                        <img class="h-12 w-12" src='./media/logo.svg' alt="logo"/>
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a class="text-gray-600  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+                                <NavLink exact to="/">
+                                    <i><FaHome/></i>
+                                    <span>Acceuil</span>
+                                </NavLink>
+                            </a>
+                            <a class="text-gray-600  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+                                <NavLink exact to="/competences">
+                                    <i><FaBookReader /></i>
+                                    <span>Compétences</span>
+                                </NavLink>
+                            </a>
+                            <a class="text-gray-600  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+                                <NavLink exact to="/portfolio">
+                                    <i><FaConnectdevelop /></i>
+                                    <span>Portfolio</span>
+                                </NavLink>
+                            </a>
+                            <a class="text-gray-600  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
+                                <NavLink exact to="/contact">
+                                    <i><FaRocketchat /></i>
+                                    <span>Contact</span>
+                                </NavLink>
+                            </a>
+                        </div>
                     </div>
-                       
-                    <h3>Kevin Laguel</h3>
+                </div>
+                <div class="block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button class="text-gray-800 hover:text-gray-400 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
+                        <svg width="20" height="20" fill="currentColor" class="h-8 w-8" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
+                            </path>
+                        </svg>
+                    </button>
                 </div>
             </div>
-
-            <div className="navigation">
-                <ul>
-                    <li>
-                        <NavLink exact to="/" activeClassName="navActive">
-                            <i><FaHome/></i>
-                            <span>Acceuil</span>
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact to="/competences" activeClassName="navActive">
-                            <i><FaBookReader /></i>
-                            <span>Compétences</span>
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact to="/portfolio" activeClassName="navActive">
-                            <i><FaConnectdevelop /></i>
-                            <span>Portfolio</span>
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact to="/contact" activeClassName="navActive">
-                        <i><FaRocketchat /></i>
-                            <span>Contact</span>
-                        </NavLink>
-                    </li>
-                </ul>
-            </div>
-
-            <div className="socialNetwork">
-                <ul>
-                    <li>
-                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaFacebookF /></i></i></a>
-                    </li>
-                    <li>
-                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaGithub /></i></i></a>
-                    </li>
-                    <li>
-                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaTwitter /></i></i></a>
-                    </li>
-                    <li>
-                        <a href="https://google.com" target="_blank" rel="noopener noreferrer"><i><i><FaLinkedinIn /></i></i></a>
-                    </li>
-                </ul>
-                <div className="signature">
-                    <p>fromScratch - Kevin Laguel - 2020</p>
-                </div>
-            </div>
-
-
-
         </div>
-    );
+        <div class="md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                    Home
+                </a>
+                <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                    Gallery
+                </a>
+                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                    Content
+                </a>
+                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+)
 };
 
 export default Navigation;
